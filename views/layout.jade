@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title= "나우뮤비"
+    title= "나우무비"
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src='/javascripts/scripts.js')
     //-  Bootstrap core JS
@@ -9,22 +9,31 @@ html
     script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js')
     //-  Third party plugin JS
     script(src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js')
+    //- Icon
+    link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet')
     //-  Core theme JS
     //- script(src='../public/javascripts/scripts.js')
     //-  Navigation
-    nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+    
+    nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-nav.fixed-top
       .container
-        a.navbar-brand.js-scroll-trigger(href='#page-top') Start Bootstrap
+        img(src='images/nowicon1.png' alt='My Image' id="navImage")
+        p.lead#NavText 영화에 대한 모든것 나우무비
         button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
           span.navbar-toggler-icon
         #navbarResponsive.collapse.navbar-collapse
           ul.navbar-nav.ml-auto
             li.nav-item
-              a.nav-link.js-scroll-trigger(href='#about') About
+              a.nav-link.js-scroll-trigger(href='#about') 자세히
             li.nav-item
-              a.nav-link.js-scroll-trigger(href='#services') Services
+              a.nav-link.js-scroll-trigger(href='#services') 맞춤 영화
             li.nav-item
-              a.nav-link.js-scroll-trigger(href='#contact') Contact
+              a.nav-link.js-scroll-trigger(href='#contact') 확진자 조회
+        .box#search
+          .container-4
+            input#search(type='search' placeholder='Search...')
+            button.icon
+              i.fa.fa-search
   body
     block content
       

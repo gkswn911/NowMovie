@@ -32,8 +32,9 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+  --nay: #f8EBEB;
   --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
+  --breakpoint-sm: 576px; 
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
@@ -3890,6 +3891,9 @@ input[type=button].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  
 }
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
@@ -3922,6 +3926,7 @@ input[type=button].btn-block {
   color: #495057;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
+  padding-left: 10px;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -4015,7 +4020,9 @@ input[type=button].btn-block {
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;
-  align-items: center;
+  align-items: center;;
+  flex-wrap: wrap
+
 }
 
 .navbar-toggler {
@@ -4303,18 +4310,28 @@ input[type=button].btn-block {
 .navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
   color: rgba(0, 0, 0, 0.9);
 }
-
+/* #mainNav  */
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 2.9rem;
+  font-weight: 1000;
+}
+#NavText {
+  margin: 19px auto auto auto;
+  width : 150px;
+  color: rgb(47, 33, 85);
+  font-size: 1rem;
+  font-weight: 900;
 }
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.9);
 }
+/* nav-item color & hover & active action */
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+  color: black;
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
+  color: white;
 }
 .navbar-dark .navbar-nav .nav-link.disabled {
   color: rgba(255, 255, 255, 0.25);
@@ -6106,7 +6123,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #007bff !important;
+  background-color: #f8f9fa !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6179,6 +6196,9 @@ button.bg-light:focus {
   background-color: #343a40 !important;
 }
 
+.bg-nav {
+  background-color: #d5d9ee !important;
+}
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
@@ -10009,8 +10029,102 @@ h3 {
 }
 header {
   padding: 156px 0 100px;
+  margin: 150px auto auto auto;
+  width : 100%;
+  text-align : center;
 }
 
 section {
   padding: 150px 0;
+}
+
+#mainNav {
+  width: 80%;
+  height: 100px;
+  border-radius: aa;
+  margin: 30px auto auto auto;
+  border-top-left-radius: 30px 50px;
+  border-bottom-right-radius: 30px 50px;
+  border-top-right-radius: 10px 20px;
+  border-bottom-left-radius: 10px 20px;
+}
+
+#search{
+  margin : 0 0 0 50px;
+}
+
+#navImage{
+  width: 200px;
+  height: 70px;
+  margin-right : 20px;
+
+}
+.container-4{
+  overflow: hidden;
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.container-4 input#search{
+  width: 200px;
+  height: 30px;
+  background: #c5cbd6;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #fff;
+  padding-left: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.container-4 input#search::-webkit-input-placeholder {
+  color: #65737e;
+}
+
+.container-4 input#search:-moz-placeholder { /* Firefox 18- */
+  color: #65737e;  
+}
+
+.container-4 input#search::-moz-placeholder {  /* Firefox 19+ */
+  color: #65737e;  
+}
+
+.container-4 input#search:-ms-input-placeholder {  
+  color: #65737e;  
+}
+
+.container-4 button.icon{
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+ 
+  border: none;
+  background: #46484b;
+  height: 30px;
+  width: 50px;
+  color: #acb4bd;
+  /* opacity: 0; */
+  font-size: 10pt;
+ 
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -ms-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+}
+
+.container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+  outline: none;
+  opacity: 1;
+  margin-left: -50px;
+}
+
+.container-4:hover button.icon:hover{
+  background: white;
 }
