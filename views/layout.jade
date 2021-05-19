@@ -32,9 +32,10 @@ html
               a.nav-link.js-scroll-trigger(href='#contact') 확진자 조회
         .box#search
           .container-4
-            input#search(type='search' placeholder='Search...')
-            button.icon
-              i.fa.fa-search
+            form(action='/search' method='post')
+              input#search(type='text' name="title")
+              button.icon(type='submit')
+                i.fa.fa-search
   body
     block content
       
