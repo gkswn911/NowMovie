@@ -1,0 +1,1 @@
+//airdata에 대한 JSON객체 담기
