@@ -1,4 +1,3 @@
-doctype html
 html
   head
     title= "나우무비"
@@ -18,7 +17,8 @@ html
     
     nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-nav.fixed-top
       .container
-        img(src='images/nowicon1.png' alt='My Image' id="navImage")
+        a(href='/')
+          img(onclick="javascript:loaction.href='http://localhost:3000/'" src='images/nowicon1.png' alt='My Image' id="navImage")
         p.lead#NavText 영화에 대한 모든것 나우무비
         button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
           span.navbar-toggler-icon
@@ -32,11 +32,11 @@ html
               a.nav-link.js-scroll-trigger(href='#contact') 확진자 조회
         .box#search
           .container-4
-            form(action='/search' method='post')
+            form(action='/search' method='get')
               input#search(type='text' name="title")
-              button.icon(type='submit')
+              button.icon(type='submit' value="Submit")
                 i.fa.fa-search
   body
     block content
-      
+  
         

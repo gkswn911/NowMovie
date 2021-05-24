@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "alert": "^5.0.10",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "cookie-parser": "~1.4.4",
@@ -14,6 +15,7 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
+    "request": "^2.88.2",
     "swiper": "^6.6.1"
   }
 }

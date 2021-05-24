@@ -10137,3 +10137,29 @@ section {
 .slider .swiper-slide h2:after {content: ''; width: 100%; height: 1px; background: rgba(255,255,255,0.3); position: absolute; left: 0; bottom: -35px;}
 .slider .swiper-slide h2 em {display: block; font-size: 59px; font-weight: 100;}
 .slider .swiper-slide p {font-size: 27px; color: #fff; padding-top: 55px;}
+
+/* search.js */
+#aboutSearch {
+  margin-bottom : 200px;
+}
+
+#aboutSearch > p,h3,h5 {
+  width: 400px;
+  margin: 0 auto;
+}
+
+#aboutSearch > img {
+  width : 400px;
+  height : 300px;
+  display: block;
+  margin : 0 auto;
+}
+
+#about,#services,#contact  .row  h2{
+ text-align : center; 
+  
+}
+
+#contact .row p.lead {
+  text-align : center; 
+}
