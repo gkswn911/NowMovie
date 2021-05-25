@@ -2,7 +2,7 @@ html
   head
     title= "나우무비"
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/stylesheets/slider.css')
+    //- link(rel='stylesheet', href='/stylesheets/slider.css')
     script(src='/javascripts/scripts.js')
     //-  Bootstrap core JS
     script(src='https://code.jquery.com/jquery-3.5.1.min.js')
@@ -18,7 +18,7 @@ html
     nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-nav.fixed-top
       .container
         a(href='/')
-          img(onclick="javascript:loaction.href='http://localhost:3000/'" src='images/nowicon1.png' alt='My Image' id="navImage")
+          img(src='images/nowicon1.png' alt='My Image' id="navImage")
         p.lead#NavText 영화에 대한 모든것 나우무비
         button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
           span.navbar-toggler-icon
