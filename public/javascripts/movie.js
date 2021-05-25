@@ -1,7 +1,7 @@
 const request = require('request');
 
 const NAVER_CLIENT_ID     = '6Ynx8MeApDkQflsjxRQs';
-const NAVER_CLIENT_SECRET = 'cVV0XjeEXh';
+const NAVER_CLIENT_SECRET = '';
 
 const movieSearch = (title, callback) => {
     const option = {
