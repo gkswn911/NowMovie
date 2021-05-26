@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var searchRouter = require('./routes/search');
+var fitMovieRouter = require('./routes/fitMovie');
 // routes의 경로를 변수명으로 지정하고 아래 app.use('/', routes) 
 //부분으로 경로를 넘겨준다.
 
@@ -31,6 +32,7 @@ app.use(bodyParser.urlencoded({extended : true}));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/search', searchRouter);
+app.use('/fitMovie',fitMovieRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

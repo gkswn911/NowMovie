@@ -3,12 +3,15 @@ const request = require('request');
 const NAVER_CLIENT_ID     = '6Ynx8MeApDkQflsjxRQs';
 const NAVER_CLIENT_SECRET = '';
 
-const movieSearch = (title, callback) => {
+const fitMovie = (Genre,Country,Yearto, callback) => {
     const option = {
-        query  :title , //이미지 검색 텍스트
+        query  : "a" , //이미지 검색 텍스트
         start  :1, //검색 시작 위치
         display:1, //가져올 이미지 갯수
-        
+        genre: Genre, 
+        country : Country,
+        yearfrom : Yearto-1,
+        yearto : Yearto        
       }
 
       request({
@@ -19,14 +22,14 @@ const movieSearch = (title, callback) => {
           'X-Naver-Client-Secret':NAVER_CLIENT_SECRET
         }
         }, (error, {body}) => {
-        const movie = JSON.parse(body)
+        const fit = JSON.parse(body)
         console.log(body);
         callback(undefined, {
-          movie:movie
+            fit:fit
             
         })
       })  
      
 }
 
-module.exports = movieSearch;
+module.exports = fitMovie;
