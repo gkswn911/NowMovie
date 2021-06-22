@@ -2,7 +2,7 @@ const request = require('request');
 
 // API 제공하는 사이트의 키
 const NAVER_CLIENT_ID     = '6Ynx8MeApDkQflsjxRQs';
-const NAVER_CLIENT_SECRET = '';
+const NAVER_CLIENT_SECRET = 'cVV0XjeEXh';
 // 위 NAVER_CLIENT_SECRET는 유출되지 않게 부탁드립니다.
 
 const movieSearch = (title, callback) => {
